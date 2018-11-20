@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx: 
+    build:
+      context: .
+      dockerfile: jenkins.dockerfile
+    container_name: jenkins
+    volumes:
+      - /mnt/jenkins:/var/jenkins_home
+    ports:
+      - 8080:8080
