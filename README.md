@@ -7,7 +7,7 @@ chmod +x /bin/docker-compose
 
 rpm -qa | grep -i git || {
 yum install git -y
-mkdir /mnt/jenkins 
+ls -d /mnt/jenkins || mkdir /mnt/jenkins 
 chmod 777 /mnt/jenkins
 }
 
